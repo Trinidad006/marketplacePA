@@ -1,0 +1,63 @@
+name: artmarket_app
+description: ArtMarket - Marketplace de Productos Artesanales con Chat
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Estado - Provider con ChangeNotifier y StateNotifier
+  provider: ^6.1.5
+  state_notifier: ^1.0.0
+  flutter_state_notifier: ^1.0.0
+
+  # Navegación - go_router con shell routes
+  go_router: ^14.8.1
+
+  # Base de datos y Storage - Supabase
+  supabase_flutter: ^2.10.3
+
+  # HTTP - Dio con retry policy
+  dio: ^5.9.0
+  dio_smart_retry: ^7.0.1
+
+  # Caché de imágenes
+  cached_network_image: ^3.4.1
+
+  # Animaciones - Lottie
+  lottie: ^3.3.2
+
+  # Utilidades
+  flutter_dotenv: ^5.2.1
+  uuid: ^4.5.2
+  intl: ^0.20.2
+  timeago: ^3.7.0
+  equatable: ^2.0.7
+  image_picker: ^1.2.1
+  flutter_image_compress: ^2.4.0
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  shimmer: ^3.0.0
+  flutter_staggered_grid_view: ^0.7.0
+
+  # Iconos
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  very_good_analysis: ^7.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/animations/
+    - .env
